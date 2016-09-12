@@ -1,0 +1,105 @@
+/*
+╔════════════════════════════════════════╗
+║  Fonts
+╚════════════════════════════════════════╝
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:400|Titillium+Web:300';
+
+/*
+╔════════════════════════════════════════╗
+║  Variables
+╚════════════════════════════════════════╝
+*/
+$font-heading: 'Titillium Web', sans-serif;
+$font-copy: 'Roboto', sans-serif;
+
+$color-black: rgb(51, 51, 51);
+$color-grey: rgb(200, 200, 200);
+/*
+╔════════════════════════════════════════╗
+║  Global Settings
+╚════════════════════════════════════════╝
+*/
+html, body {
+  // Base font size
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  // Better box model
+  box-sizing: border-box;
+}
+
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+╔════════════════════════════════════════╗
+║  Landing Page Header
+╚════════════════════════════════════════╝
+*/
+body > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+
+  height: 600px;
+
+  color: $color-black;
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .dot {
+      width: 1em;
+      height: 1em;
+      margin: 1em;
+      border-radius: 50%;
+      background: $color-grey;
+    }
+  }
+
+  h1 {
+    font-family: $font-heading;
+    font-size: 4.5em;
+    letter-spacing: 0.05em;
+  }
+
+  h2 {
+    font-family: $font-copy;
+    font-weight: 400;
+    font-size: 1.25em;
+    color: lighten($color-black, 25%);
+  }
+
+  img.piano {
+    margin-top: 1.5em;
+  }
+}
+
+section.tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+
+  border-top: 1px solid rgb(240, 240, 240);
+  background: rgb(247, 247, 247);
+
+  header {
+    h1 {
+      font-family: $font-heading;
+      font-size: 2.75em;
+      letter-spacing: 0.05em;
+      color: $color-black;
+    }
+  }
+}

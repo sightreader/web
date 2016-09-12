@@ -1,0 +1,6 @@
+# IntelliJ WebStorm IDE
+.idea/
+
+# SCSS -> CSS Files
+assets/styles/*.css
+assets/styles/*.map
